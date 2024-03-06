@@ -65,7 +65,7 @@ p {
 
 .headerButton {
   width: 100%;
-  height: 8vh;
+  height: 70px;
   background-color: #5d3b1c;
   color: white;
   border: 1px solid black;
@@ -80,13 +80,14 @@ p {
 
 #photos {
   display: flex;
-  flex-direction: wrap;
-  height: 500px;
-  width: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 85%;
 }
 .homeImage {
   height: 100%;
-  width: 80%;
+  width: 30%;
 }
 
 /* ABOUT US */
@@ -101,6 +102,7 @@ p {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .contact {
@@ -110,8 +112,8 @@ p {
 }
 
 #map {
-  /* width: 50%; */
-  height: 700px;
+  width: 60%;
+  /* height: 700px; */
 }
 
 /* MENUS */
@@ -126,13 +128,15 @@ p {
 #menuButtons {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   column-gap: 30px;
+  row-gap: 10px;
   width: 100%;
 }
 
 .menuButton {
-  width: 50vw;
-  height: 8vh;
+  width: 350px;
+  height: 80px;
   background-color: #5d3b1c;
   color: white;
   border: 1px solid black;
@@ -156,11 +160,12 @@ p {
 .menuSubSection {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   column-gap: 40px;
 }
 
 .menuSubSubSection {
-  width: 100%;
+  width: 31%;
   display: flex;
   flex-direction: column;
   align-items: center;
