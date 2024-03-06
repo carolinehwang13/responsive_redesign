@@ -6,7 +6,7 @@ body {
   align-items: center;
   background-color: #fcf0cf;
   margin: 0px;
-  max-width: 100%;
+  /* width: 100vw; */
   overflow-x: hidden;
 }
 
@@ -43,7 +43,7 @@ p {
 #header {
   background-color: black;
   width: 100%;
-  height: auto;
+  /* height: auto; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +52,8 @@ p {
 }
 
 #logo {
-  height: 15vh;
+  width: 50%;
+  height: auto;
 }
 
 #headerButtons {
@@ -127,10 +128,11 @@ p {
 
 #menuButtons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  /* align-items: center; */
   flex-wrap: wrap;
-  column-gap: 30px;
-  row-gap: 10px;
+  column-gap: 40px;
+  row-gap: 20px;
   width: 100%;
 }
 
@@ -182,4 +184,56 @@ p {
   height: 50px;
   flex-direction: row;
   /* align-content: space-around; */
+}
+
+@media screen and (orientation: portrait) and (max-width: 800px) {
+  #header {
+    background-color: black;
+    width: 110%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    position: sticky;
+  }
+
+  #logo {
+    height: 15vh;
+  }
+
+  #headerButtons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: stretch;
+  }
+
+  .headerButton {
+    width: 100%;
+    height: 70px;
+    background-color: #5d3b1c;
+    color: white;
+    border: 1px solid black;
+    font-family: "Open Sans";
+    font-size: 25px;
+  }
+
+  .headerButton:hover {
+    background-color: #f7e1a5;
+    color: black;
+  }
+
+  #photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 85%;
+  }
+  .homeImage {
+    height: 100%;
+    width: 30%;
+  }
 }
