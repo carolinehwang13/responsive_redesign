@@ -6,7 +6,7 @@ body {
   align-items: center;
   background-color: #fcf0cf;
   margin: 0px;
-  /* width: 100vw; */
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -43,7 +43,7 @@ p {
 #header {
   background-color: black;
   width: 100%;
-  /* height: auto; */
+  height: 230px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,8 +52,8 @@ p {
 }
 
 #logo {
-  width: 50%;
-  height: auto;
+  /* width: 70%; */
+  height: 70%;
 }
 
 #headerButtons {
@@ -63,10 +63,9 @@ p {
   justify-content: space-around;
   align-content: stretch;
 }
-
 .headerButton {
   width: 100%;
-  height: 70px;
+  height: 100%;
   background-color: #5d3b1c;
   color: white;
   border: 1px solid black;
@@ -102,7 +101,7 @@ p {
 #contactInfo {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -113,7 +112,7 @@ p {
 }
 
 #map {
-  width: 60%;
+  width: 70%;
   /* height: 700px; */
 }
 
@@ -129,13 +128,11 @@ p {
 #menuButtons {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   flex-wrap: wrap;
   column-gap: 40px;
   row-gap: 20px;
   width: 100%;
 }
-
 .menuButton {
   width: 350px;
   height: 80px;
@@ -146,7 +143,6 @@ p {
   font-size: 25px;
   border-radius: 10px;
 }
-
 .menuButton:hover {
   background-color: #f7e1a5;
   color: black;
@@ -161,13 +157,13 @@ p {
 
 .menuSubSection {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  column-gap: 40px;
+  column-gap: 50px;
 }
 
 .menuSubSubSection {
-  width: 31%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -186,10 +182,39 @@ p {
   /* align-content: space-around; */
 }
 
-@media screen and (orientation: portrait) and (max-width: 800px) {
+@media screen and (orientation: portrait) and (max-width: 700px) {
+  body {
+    width: 100%;
+  }
+  h1 {
+    font-family: "Merriweather Sans";
+    font-size: 40px;
+    margin-bottom: 0px;
+    font-weight: 2000;
+  }
+  h2 {
+    font-family: "Merriweather Sans";
+    font-size: 25px;
+    font-weight: 1000;
+    margin-bottom: 0px;
+  }
+  h3 {
+    font-family: "Open Sans";
+    font-size: 25px;
+    font-weight: 1000;
+    margin-bottom: 0px;
+    text-decoration: underline;
+  }
+  p {
+    font-family: "Open Sans";
+    font-size: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
   #header {
     background-color: black;
-    width: 110%;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -197,43 +222,68 @@ p {
     align-content: space-around;
     position: sticky;
   }
-
   #logo {
-    height: 15vh;
+    height: 70%;
   }
-
   #headerButtons {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-content: stretch;
+    flex-direction: column;
   }
-
   .headerButton {
     width: 100%;
-    height: 70px;
+    height: 60px;
     background-color: #5d3b1c;
     color: white;
     border: 1px solid black;
     font-family: "Open Sans";
-    font-size: 25px;
+    font-size: 20px;
   }
-
-  .headerButton:hover {
-    background-color: #f7e1a5;
-    color: black;
-  }
-
   #photos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 85%;
+    width: 90%;
   }
-  .homeImage {
-    height: 100%;
-    width: 30%;
+
+  #contactInfo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .menuButton {
+    width: 350px;
+    height: 60px;
+    background-color: #5d3b1c;
+    color: white;
+    border: 1px solid black;
+    font-family: "Open Sans";
+    font-size: 20px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-width: 850px) {
+  .menuSubSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    width: 100%;
+  }
+  .menuSubSubSection {
+    width: 100%;
+  }
+  .menuItem {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    flex-direction: row;
   }
 }
