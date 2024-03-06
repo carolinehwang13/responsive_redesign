@@ -52,7 +52,7 @@ p {
 }
 
 #logo {
-  /* width: 70%; */
+  width: auto;
   height: 70%;
 }
 
@@ -223,7 +223,8 @@ p {
     position: sticky;
   }
   #logo {
-    height: 70%;
+    /* height: 70%; */
+    width: 60%;
   }
   #headerButtons {
     width: 100%;
@@ -270,6 +271,9 @@ p {
 }
 
 @media screen and (orientation: portrait) and (max-width: 850px) {
+  #logo {
+    width: 60%;
+  }
   .menuSubSection {
     display: flex;
     flex-direction: row;
