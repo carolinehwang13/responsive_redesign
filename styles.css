@@ -109,6 +109,11 @@ p {
   /* flex-direction: row; */
 }
 
+#map {
+  /* width: 50%; */
+  height: 700px;
+}
+
 /* MENUS */
 #menus {
   display: flex;
@@ -150,11 +155,26 @@ p {
 
 .menuSubSection {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  column-gap: 40px;
 }
 
 .menuSubSubSection {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  white-space: nowrap;
+}
+.horizontal_line {
+  width: 100%;
+  border-bottom: 3px dotted black;
+  line-height: 50%;
+}
+.menuItem {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  flex-direction: row;
+  /* align-content: space-around; */
 }
