@@ -18,11 +18,11 @@
   <!-- page content goes into <body> -->
   <body>
     <div id="header">
-      <img id="logo" src="./assets/norbys_logo.png" alt="Norby's Cafe logo" />
+      <img id="logo" src="./assets/norbys_logo.png" alt="Norby's Cafe logo" aria-label="Cafe logo" />
       <div id="headerButtons">
-        <button class="button headerButton">About Us</button>
-        <button class="button headerButton">Menu</button>
-        <button class="button headerButton">Order Online</button>
+        <button class="button headerButton" aria-label="About us button">About Us</button>
+        <button class="button headerButton" aria-label="Menu button">Menu</button>
+        <button class="button headerButton" aria-label="Order online button">Order Online</button>
       </div>
     </div>
     <div id="photos">
@@ -30,16 +30,19 @@
         class="homeImage"
         src="./assets/photo1.jpeg"
         alt="A cozy seating area inside Norby's"
+        aria-label="Cafe seating area"
       />
       <img
         class="homeImage"
         src="./assets/photo2.png"
         alt="A tasty coffee and acai bowl"
+        aria-label="Norby's food"
       />
       <img
         class="homeImage"
         src="./assets/photo3.png"
         alt="A yummy scone with hot chocolate"
+        aria-label="Norby's food and drink"
       />
     </div>
 
@@ -68,16 +71,16 @@
           <p>Mon-Sat: 7:30 AM - 6:00 PM <br />Sun: 8:00 AM - 5:00 PM</p>
         </div>
       </div>
-      <img id="map" src="./assets/map.png" alt="Norby's" />
+      <img id="map" src="./assets/map.png" alt="Norby's on Google Maps" aria-label="Norby's on Google Maps"/>
     </div>
 
     <div id="menus">
       <h1>MENU</h1>
       <div id="menuButtons">
-        <button class="button menuButton">Drinks</button>
-        <button class="button menuButton">Breakfast</button>
-        <button class="button menuButton">Lunch</button>
-        <button class="button menuButton">Order Online</button>
+        <button class="button menuButton" aria-label="Drinks button">Drinks</button>
+        <button class="button menuButton" aria-label="Breakfast button">Breakfast</button>
+        <button class="button menuButton" aria-label="Lunch button">Lunch</button>
+        <button class="button menuButton" aria-label="Order online button">Order Online</button>
       </div>
       <div class="menuSection" id="drinks">
         <h2>Drinks</h2>
